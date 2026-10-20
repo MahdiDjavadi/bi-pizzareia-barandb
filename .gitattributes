@@ -1,2 +1,31 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Database files and backups
+*.bak
+*.mdf
+*.ldf
+*.ndf
+*.trn
+*.sha256
+
+# Raw data and exports
+*.csv
+*.xlsx
+*.xls
+*.parquet
+data/raw/
+private/
+
+# Power BI files that embed data
+*.pbix
+*.pbit
+
+# Secrets and local config
+.env
+*.local.json
+appsettings.*.json
+
+# IDE and build noise
+.vs/
+*.user
+bin/
+obj/
+.ssmssqlproj.user
