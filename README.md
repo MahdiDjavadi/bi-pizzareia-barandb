@@ -1,12 +1,12 @@
-# BaranDb: OLTP Source Profiling
+# BaranDb: پروفایل‌سازی منبع داده OLTP
 
-Source profiling of a restaurant OLTP database (SQL Server backup): schema discovery, relationship discovery, grain, and data-quality findings.
+پروفایل‌سازی (source profiling) یک دیتابیس عملیاتی رستوران (backup روی SQL Server): کشف ساختار، کشف رابطه‌ها، تعیین grain و یافته‌های کیفیت داده.
 
-**Status:** in progress. No data is published; every number in this repo is an aggregate.
+**وضعیت:** در حال انجام. هیچ داده‌ای منتشر نمی‌شود و همه اعداد این ریپو تجمیعی (aggregate) هستند.
 
-## How to read this repo
-- `sql/discovery/`: one read-only SQL file per test (T01, T02, ...)
-- `docs/tests/`: one write-up per test (Goal, Result, Interpretation, Decision)
-- `docs/query-index.md`, `docs/findings-log.md`, `docs/decisions.md`
+## نحوه خواندن این ریپو
+- `sql/discovery/`: برای هر تست یک فایل SQL فقط‌خواندنی (T01، T02، ...)
+- `docs/tests/`: برای هر تست یک شرح (هدف، نتیجه، تفسیر، تصمیم)
+- `docs/query-index.md`، `docs/findings-log.md`، `docs/decisions.md`
 
-Labels: P = project phase, S = source-assessment stage, T = discovery test.
+برچسب‌ها: P = فاز پروژه، S = مرحله ارزیابی منبع، T = تست کشف.

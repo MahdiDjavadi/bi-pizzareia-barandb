@@ -1,12 +1,12 @@
-# Test NN: Title
-**Phase / Stage:** P2 / Sx
+# تست NN: عنوان
+**فاز / مرحله:** P2 / Sx
 
-## Goal
-## What we did
-Script: `sql/discovery/tNN_....sql`
-## Result
-| Item | Value |
+## هدف
+## کاری که انجام شد
+اسکریپت: `sql/discovery/tNN_....sql`
+## نتیجه
+| مورد | مقدار |
 |---|---|
-## Important note
-## Interpretation
-## Decision
+## نکته مهم
+## تفسیر
+## تصمیم

@@ -1,2 +1,2 @@
-| Test | SQL file | What it returns |
+| تست | فایل SQL | خروجی |
 |---|---|---|
