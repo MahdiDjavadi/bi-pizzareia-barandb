@@ -1,9 +1,5 @@
 /* ============================================================================
    T1 | P2 / S0-S1 | Restore and integrity
-   Goal    : restore the backup safely as a new database, verify structure, protect it.
-   Outcome : backup header and file list read; restored on SQL Server 2025 (compat level kept at
-             160, collation Persian_100_CI_AS kept); DBCC CHECKDB clean; database set to READ_ONLY.
-             Note: a clean CHECKDB proves structure only, not data correctness.
    ============================================================================ */
 
 -- T1.1 Local file fingerprint (run in PowerShell, not in SSMS; keep the output private)
