@@ -19,6 +19,8 @@
 
 ### خلاصه وضعیت دیتابیس
 
+<div dir="rtl">
+
 | مورد | مقدار |
 |---|---:|
 | تعداد جداول | 409 |
@@ -50,6 +52,8 @@
 | `HistoryFactors` | `Date`, `t_date` | `Id` |
 | `orderItems` | — | `ID` |
 | `orders` | `t_date`, `SaveDate`, `LastUpdateDate` | `t_orderID` |
+
+</div>
 
 ## نکته مهم
 
