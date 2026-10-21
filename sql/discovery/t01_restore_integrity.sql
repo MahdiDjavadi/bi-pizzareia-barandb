@@ -2,10 +2,6 @@
    T1 | P2 / S0-S1 | Restore and integrity
    ============================================================================ */
 
--- T1.1 Local file fingerprint (run in PowerShell, not in SSMS; keep the output private)
--- Get-FileHash -Algorithm SHA256 -LiteralPath '<BACKUP_PATH>'
--- Hash value: <store in private notes, never commit>
-
 -- T1.2 Backup metadata only (no restore yet)
 RESTORE HEADERONLY
 FROM DISK = N'<BACKUP_PATH>';
