@@ -18,8 +18,8 @@
 | Database creation date | 2024-10-15 |
 | Backup taken | 2025-12-22 18:07 |
 | Restored on | SQL Server 2025 |
-| Compatibility level | 160 (حفظ می شود) |
-| Collation | Persian_100_CI_AS (حفظ می شود) |
+| Compatibility level | 160 (حفظ شد) |
+| Collation | Persian_100_CI_AS (حفظ شد) |
 | DBCC CHECKDB | بدون خطا |
 | State | READ_ONLY |
 
