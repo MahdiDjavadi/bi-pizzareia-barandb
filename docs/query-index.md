@@ -7,5 +7,6 @@
 | T03 | `sql/discovery/t03_relationships_domains.sql` | یکتایی کلیدها، رابطه‌ها و توزیع ستون‌های وضعیت |
 | T04 | `sql/discovery/t04_date_coverage.sql` | بازه زمانی تراکنش‌ها، حجم ماهانه، gapها و کامل‌بودن روزهای آخر |
 | T05 | `sql/discovery/t05_date_semantics_hour_distribution.sql` | معنای تاریخ‌ها، تاریخچه ویرایش، ستون‌های تاریخ جدول‌های فعالیت و توزیع ساعتی |
+| T06 | `sql/discovery/t06_activity_inside_gaps.sql` | فعالیت ده جدول در داخل و اطراف gapها و روزهای تک‌روزه بدون سفارش |
 
 </div>

@@ -13,51 +13,53 @@
 - شمارش سفارش‌های بدون آیتم.
 - بررسی توزیع ستون‌های وضعیت و کانال (`t_show`، `FactorType`، `fromMobile`، `SysName`، `t_paymentMethod`، `OnlineShopId`).
 
-اسکریپت: `sql/discovery/t03_relationships_domains.sql`
+**اسکریپت:** `sql/discovery/t03_relationships_domains.sql`
 
 ## نتیجه
 
-### یکتایی کلیدها
+### T3.1 – یکتایی کلیدها  
+*(کلیدهای اعلام‌شده وجود ندارند، بنابراین تست می‌شود)*
 
-| key_name | total_rows | distinct_keys | null_keys |
-|---|---|---|---|
-| orders.t_orderID | 17654 | 17654 | 0 |
-| orderItems.ID | 47525 | 47525 | 0 |
-| customers.t_customerID | 4181 | 4181 | 0 |
-| HistoryFactors.t_orderID | 2016 | 1778 | 0 |
-| products.t_productID | 248 | 248 | 0 |
+| key_name                | total_rows | distinct_keys | null_keys |
+|-------------------------|------------|---------------|-----------|
+| orders.t_orderID        | 17654      | 17654         | 0         |
+| orderItems.ID           | 47525      | 47525         | 0         |
+| customers.t_customerID  | 4181       | 4181          | 0         |
+| HistoryFactors.t_orderID| 2016       | 1778          | 0         |
+| product.t_productID     | 248        | 248           | 0         |
 
-### روابط جداول
+### T3.2 – روابط کاندید  
+*(استفاده از EXISTS برای جلوگیری از تکثیر join)*
 
-| relationship | child_rows | null_refs | orphan_rows |
-|---|---|---|---|
-| orderItems -> orders | 47525 | 0 | 0 |
-| orders -> customers | 17654 | 0 | 0 |
-| HistoryFactors -> orders | 2016 | 0 | 0 |
-| orderItems -> products | 47525 | 0 | 0 |
+| relationship              | child_rows | null_refs | orphan_rows |
+|---------------------------|------------|-----------|-------------|
+| orderItems → orders       | 47525      | 0         | 0           |
+| orders → customers        | 17654      | 0         | 0           |
+| HistoryFactors → orders   | 2016       | 0         | 0           |
+| orderItems → products     | 47525      | 0         | 0           |
 
-### کاردینالیتی line / header
+### T3.3 – سفارش‌های بدون هیچ آیتم خطی
 
 | order_rows | orders_without_items |
-|---|---|
-| 17654 | 0 |
+|------------|----------------------|
+| 17654      | 0                    |
 
-### توزیع مقادیر
+### T3.4 – توزیع مقادیر ستون‌های وضعیت/کانال  
+*(فقط تعداد، بدون داده شخصی)*
 
-| dim | val | cnt |
-|---|---|---|
-| FactorType | 0 | 7322 |
-| FactorType | 1 | 5095 |
-| FactorType | 3 | 3303 |
-| FactorType | 2 | 1934 |
-| fromMobile | 0 | 17654 |
-| OnlineShopId_is_set | NOT NULL | 17654 |
-| SysName |  | 10663 |
-| SysName | (نام ماشین، ماسک‌شده) | 6991 |
-| t_paymentMethod |  | 17654 |
-| t_show | 1 | 17136 |
-| t_show | 0 | 518 |
-
+| dim                  | val              | cnt   |
+|----------------------|------------------|-------|
+| FactorType           | 0                | 7322  |
+| FactorType           | 1                | 5095  |
+| FactorType           | 3                | 3303  |
+| FactorType           | 2                | 1934  |
+| fromMobile           | 0                | 17654 |
+| OnlineShopId_is_set  | NOT NULL         | 17654 |
+| SysName              | *(خالی)*         | 10663 |
+| SysName              | DESKTOP-AR8JPIC  | 6991  |
+| t_paymentMethod      | *(خالی)*         | 17654 |
+| t_show               | 1                | 17136 |
+| t_show               | 0                | 518   |
 
 ## نکته مهم
 

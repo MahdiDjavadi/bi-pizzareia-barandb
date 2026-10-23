@@ -1,10 +1,5 @@
 /* ============================================================================
    T4 | P2 / S4 | Date coverage, gaps, monthly volume
-   Goal    : establish the real transaction period and find periods without activity.
-   Outcome : orders.t_date spans 2024-10-19 to 2025-12-22 (387 active days); the last day is partial
-             (backup taken at 18:07), so the analytical as-of date is 2025-12-21.
-             Gaps: 3 days at the start, 35 days (2024-11-09 to 2024-12-13), 4 days (2025-03-21 to 03-24),
-             plus one single day found in T6.
    ============================================================================ */
 
 USE [BaranDb];
