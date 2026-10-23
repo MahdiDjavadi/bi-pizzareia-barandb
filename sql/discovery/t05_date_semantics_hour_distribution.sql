@@ -1,10 +1,5 @@
 /* ============================================================================
    T5 | P2 / S4 | Date semantics, edit history, hour distribution
-   Goal    : decide which date column is the business date and what HistoryFactors represents.
-   Outcome : t_date and SaveDate fall on the same day in all 17,654 rows (t_date = business date);
-             1,778 updated orders = exactly the orders present in HistoryFactors (edit history,
-             up to 5 versions per order), so History is not additional sales;
-             about 88% of orders are placed between 18:00 and 23:59, peak around 21:00.
    ============================================================================ */
 
 USE [BaranDb];
