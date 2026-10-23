@@ -9,5 +9,6 @@
 | T05 | `sql/discovery/t05_date_semantics_hour_distribution.sql` | معنای تاریخ‌ها، تاریخچه ویرایش، ستون‌های تاریخ جدول‌های فعالیت و توزیع ساعتی |
 | T06 | `sql/discovery/t06_activity_inside_gaps.sql` | فعالیت ده جدول در داخل و اطراف gapها و روزهای تک‌روزه بدون سفارش |
 | T07 | `sql/discovery/t07_grain_money_columns.sql` | grain خط‌ها، پروفایل ستون‌های پولی، مقایسه جمع هدر با خط‌ها و جدول‌های کاندید محصول |
+| T08 | `sql/discovery/t08_header_line_reconciliation.sql` | تطبیق مبلغ هدر با جمع خط‌ها، ستون‌های پولی تکراری و مرده، سرنخ‌های `FactorType` و ساختار جدول‌های کاندید محصول |
 
 </div>
