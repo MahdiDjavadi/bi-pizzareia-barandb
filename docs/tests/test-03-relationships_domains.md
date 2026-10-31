@@ -49,19 +49,19 @@
 ### کوئری T3.4 – توزیع مقادیر ستون‌های وضعیت/کانال  
 *(فقط تعداد، بدون داده شخصی)*
 
-| dim                  | val              | cnt   |
-|----------------------|------------------|-------|
-| FactorType           | 0                | 7322  |
-| FactorType           | 1                | 5095  |
-| FactorType           | 3                | 3303  |
-| FactorType           | 2                | 1934  |
-| fromMobile           | 0                | 17654 |
-| OnlineShopId_is_set  | NOT NULL         | 17654 |
-| SysName              | *(خالی)*         | 10663 |
-| SysName              | DESKTOP-AR8JPIC  | 6991  |
-| t_paymentMethod      | *(خالی)*         | 17654 |
-| t_show               | 1                | 17136 |
-| t_show               | 0                | 518   |
+| dim                  | val                   | cnt   |
+|----------------------|-----------------------|-------|
+| FactorType           | 0                     | 7322  |
+| FactorType           | 1                     | 5095  |
+| FactorType           | 3                     | 3303  |
+| FactorType           | 2                     | 1934  |
+| fromMobile           | 0                     | 17654 |
+| OnlineShopId_is_set  | NOT NULL              | 17654 |
+| SysName              | *(خالی)*              | 10663 |
+| SysName              | (نام ماشین، ماسک‌شده) | 6991 |
+| t_paymentMethod      | *(خالی)*              | 17654 |
+| t_show               | 1                     | 17136 |
+| t_show               | 0                     | 518   |
 
 </div>
 

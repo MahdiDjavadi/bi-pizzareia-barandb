@@ -11,5 +11,6 @@
 | T07 | `sql/discovery/t07_grain_money_columns.sql` | grain خط‌ها، پروفایل ستون‌های پولی، مقایسه جمع هدر با خط‌ها و جدول‌های کاندید محصول |
 | T08 | `sql/discovery/t08_header_line_reconciliation.sql` | تطبیق مبلغ هدر با جمع خط‌ها، ستون‌های پولی تکراری و مرده، سرنخ‌های `FactorType` و ساختار جدول‌های کاندید محصول |
 | T09 | `sql/discovery/t09_product_customer_links.sql` | رابطه آیتم با محصول، توزیع ویژگی‌های محصول، معنای `t_copr`، تمرکز سفارش‌ها روی مشتری‌ها و ساختار `BackFactors` |
+| T10 | `sql/discovery/t10_sold_categories_customer_returns.sql` | دسته‌های فروخته‌شده، `t_copr` به‌تفکیک دسته، حروف عربی و فارسی، مشتری غالب و نوع سفارش، ستون‌های `customers` و رابطه `BackFactors` با `t_show = 0` |
 
 </div>

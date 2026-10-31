@@ -48,7 +48,7 @@
 | t_show      | 1            | 207      |
 | t_show      | 0            | 41       |
 
-### کوئری T09.3: `t_copr` در برابر `isPizza`
+### کوئری T09.3: مقایسه `t_copr` در برابر `isPizza`
 
 | t_copr | isPizza | lines |
 |--------|---------|-------|
